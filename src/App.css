@@ -6,7 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+.logo-animé{
+  animation: fade 2s ease-in-out infinite;
+}
 
+@-o-keyframes fade {
+  0%, 100% {transform: scale(2);}
+  50% {transform: scale(1-1);}
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

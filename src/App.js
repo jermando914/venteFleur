@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import AccueilFleurs from './Page d\'accueil/AccueilFleurs';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Page de contact/Footer';
+import NavBars from './Page d\'accueil/NavBars';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Contact from './Page de contact/PageDeContact';
+import Panier from './Panier d\'achat/PanierD\'achat';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (  
+    <BrowserRouter>
+     <NavBars/>
+    <Routes>
+      <Route path='/' element={<AccueilFleurs/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/panier' element={<Panier/>}/>
+    </Routes>
+    <Footer/>
+    </BrowserRouter>
   );
 }
 
