@@ -80,7 +80,7 @@ function AccueilFleurs() {
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                     <img src={car} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <h5>Bouquet Romantiques</h5>
                         <p>prix : 25$</p>
                      <Link to='/panier' state={{nom: 'Bouquet Romantique', prix: 25}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
@@ -89,7 +89,7 @@ function AccueilFleurs() {
 
                     <div class="carousel-item">
                     <img src={car2} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <h5>Bouquet Romantiques Rouge</h5>
                         <p>prix : 25$</p>
                      <Link to='/panier' state={{nom: 'Bouquet Romantique Rouge', prix: 20}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
@@ -98,7 +98,7 @@ function AccueilFleurs() {
 
                     <div class="carousel-item">
                     <img src={car3} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <h5>Bouquet Romantiques Jaune</h5>
                         <p>prix : 25$</p>
                      <Link to='/panier' state={{nom: 'Bouquet Romantique Jaune', prix: 25}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
@@ -107,7 +107,7 @@ function AccueilFleurs() {
 
                      <div class="carousel-item">
                     <img src={car4} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <h5>Bouquet de Fleurs Magnifique</h5>
                         <p>prix : 30$</p>
                      <Link to='/panier' state={{nom: 'de Fleurs Magnifique', prix: 30}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
@@ -116,7 +116,7 @@ function AccueilFleurs() {
 
                      <div class="carousel-item">
                     <img src={car5} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                     <div className="carousel-caption d-none d-md-block">
+                     <div className="carousel-caption d-md-block">
                         <h5>Bouquet de Fleurs avec de panne génial</h5>
                         <p>prix : 35$</p>
                      <Link to='/panier' state={{nom: 'de Fleurs avec de panne génial', prix: 35}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
@@ -125,7 +125,7 @@ function AccueilFleurs() {
 
                      <div class="carousel-item">
                     <img src={car6} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                     <div className="carousel-caption d-none d-md-block">
+                     <div className="carousel-caption d-md-block">
                         <h5>Bouquet de Fleurs Milticouleur</h5>
                         <p>prix : 30$</p>
                      <Link to='/panier' state={{nom: 'de Fleurs Milticouleur', prix: 30}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
@@ -134,7 +134,7 @@ function AccueilFleurs() {
 
                      <div class="carousel-item">
                     <img src={car7} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                     <div className="carousel-caption d-none d-md-block">
+                     <div className="carousel-caption d-md-block">
                         <h5>Bouquet de Fleurs</h5>
                         <p>prix : 30$</p>
                      <Link to='/panier' state={{nom: 'Boutique de Fleurs', prix: 30}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
@@ -143,7 +143,7 @@ function AccueilFleurs() {
 
                      <div class="carousel-item">
                     <img src={car8} class="d-block w-100" style={{height: '100vh'}} alt="image"/>
-                     <div className="carousel-caption d-none d-md-block">
+                     <div className="carousel-caption d-md-block">
                         <h5>Bouquet de Fleurs Magnifique super mignonne</h5>
                         <p>prix : 35$</p>
                      <Link to='/panier' state={{nom: 'Boutique de Fleurs Magnifique super mignonne', prix: 35}} className="btn btn-success">Commander maintenant <i class="bi bi-caret-right-fill"></i></Link>       
