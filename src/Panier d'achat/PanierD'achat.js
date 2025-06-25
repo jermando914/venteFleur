@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 
@@ -6,23 +6,25 @@ import axios from "axios";
 function Panier() {
     const location = useLocation();
     const {nom,prix}=location.state || {};
+   
 
     const confirmerCommande = async() => {
       try{
         const response = await axios.post('http://localhost:5000/api/commande', {
-          method: 'POST',
-          headers: {'Content-Type':'application/json'},
-          body: JSON.stringify({ 
-            produit: '', prix: prix.prix})
-        });
+         
+            produit: '', 
+            prix: prix.prix});
+        
+
         console.log(response.data.message)
         alert('Commande confirmée avec succées');
       } catch(err) {
-        alert('Erreur de l\envoie');
+        alert('Erreur de l\'envoie');
       }
       
     }
 
+  
     return(
       <div className="container mt-5 py-5">
         <div className="card shadow">
@@ -39,6 +41,7 @@ function Panier() {
             ) : (
               <p className="text-danger">Aucun produit sélectionné</p>
             )}
+           
         </div>
         </div>
       </div>
